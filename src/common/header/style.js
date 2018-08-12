@@ -100,6 +100,7 @@ export const NavSearch = styled.input.attrs({
 `;
 
 export const SeacchInfo = styled.div`
+  z-index: 99;
   position: absolute;
   left: 20px;
   top: 56px;
