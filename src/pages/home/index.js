@@ -10,6 +10,14 @@ import {
 } from './style'
 
 class Home extends Component {
+  componentDidMount() {
+    console.log(process.env)
+    if(process.env.NODE_ENV === 'development') {
+      console.log('development')
+    } else {
+      console.log('prod')
+    }
+  }
   render() {
     return (
       <HomeWrapper>
